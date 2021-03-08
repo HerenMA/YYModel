@@ -26,12 +26,12 @@ Pod::Spec.new do |s|
     ss.public_header_files = 'YYModel/*.{h}'
   end
 
-  #s.subspec 'Framework' do |ss|
-  #  ss.ios.vendored_framework   = 'ios/YYModel.framework'
-  #  ss.osx.vendored_framework   = 'osx/YYModel.framework'
-  #  ss.watchos.vendored_framework   = 'watchos/YYModel.framework'
-  #  ss.tvos.vendored_framework   = 'tvos/YYModel.framework'
-  #end
+  s.subspec 'Framework' do |ss|
+    ss.ios.vendored_framework   = 'ios/YYModel.framework'
+    ss.osx.vendored_framework   = 'osx/YYModel.framework'
+    ss.watchos.vendored_framework   = 'watchos/YYModel.framework'
+    ss.tvos.vendored_framework   = 'tvos/YYModel.framework'
+  end
   
   s.frameworks = 'Foundation', 'CoreFoundation'
 

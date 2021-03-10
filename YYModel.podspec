@@ -8,18 +8,9 @@ Pod::Spec.new do |s|
   s.homepage     = 'https://github.com/ibireme/YYModel'
   s.source       = { :git => 'https://github.com/HerenMA/YYModel.git', :tag => s.version.to_s }
   s.ios.deployment_target = '9.0'
-  
   s.requires_arc = true
-  s.default_subspec = 'Core'
-
-  s.subspec 'Core' do |ss|
-    ss.source_files = 'YYModel/*.{h,m}'
-    ss.public_header_files = 'YYModel/*.{h}'
-  end
-
-  s.subspec 'Framework' do |ss|
-    ss.ios.vendored_framework   = 'ios/YYModel.framework'
-  end
+  s.source_files = 'YYModel/*.{h,m}'
+  s.public_header_files = 'YYModel/*.{h}'
   
   s.frameworks = 'Foundation', 'CoreFoundation'
 
